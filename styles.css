@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 20rem;
+    height: 20rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: 0 auto;
+    margin-top: 4rem;
+    /* background-color: red; */
+    gap: 1rem 1rem;
+}
+
+.grid-cell{
+    background-color: #E21818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.hide{
+    content-visibility: hidden;
+}
+
+.disable-tile {
+    cursor: auto;
+    background-color: #19fc05;
+}
+
+.congratulations{
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    background-color: yellow;
+    max-width: 35rem;
+    height: 3rem;
+    padding: 1rem 2rem;
+    border-radius: 2%;
+}
+
+.hide-over{
+    display: none;
+}
